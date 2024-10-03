@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+li {
+    list-style-type: none;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content {
+    position: relative;
+    background-color: darkblue;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    color: white;
+    border: 3px dotted greenyellow;
+}
+
+.contentListItem {
+    border: 10px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.floatingSection,
+.floatingSectionInner {
+    top: 0;
+}
+
+.floatingSection {
+    position: absolute;
+    right: 5px;
+    height: 100%;
+}
+
+.floatingSectionInner {
+    position: sticky;
+    display: inline-flex;
+    gap: 10px;
+}
+
+.copyIcon,
+.remove {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.copyIcon:hover,
+.remove:hover {
+    opacity: 0.7;
+}
+
+.copyIcon {
+    width: 40px;
+    filter: invert(1);
+}
+
+.remove {
+    font-family: monospace;
+    color: red;
+    user-select: none;
+    font-size: 30px;
+}
